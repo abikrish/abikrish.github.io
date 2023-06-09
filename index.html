@@ -1,27 +1,272 @@
-	<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<meta name="description" content="Venba is a narrative cooking game, where players play as an Indian immigrant mom, who immigrates to Canada with her family in the 1980s. Players will cook various dishes and restore lost recipes, hold branching conversations and explore in this story about family, love, loss and more.">
-	</head>
-	<title> Venba | A game about cooking, family and more </title>
-	<body>
-		<div class ="container">
+<!DOCTYPE html>
+<html lang="en">
 
-			<div class ="row"/>
-			<div class ="row titleContainer">
-				<img class ="title" src ="images/Venba.png" alt ="Venba"s/>
-			</div>
-			<div class ="links row align-items-start">
-				<div class ="steam col"> 
-					<a href="https://store.steampowered.com/app/1491670/Venba"></a> 
-					<img src ="images/Wishlist.png"/>
-				</div>
-				<div class ="press col"> 
-					<a href="./press"> </a> 
-					<span> Press</span>
-				</div>
-			</div>
-		</div>
-	</body>
-	</html>
+<head>
+    <meta charset="utf-8">
+    <title>Venba | A game about cooking, family and more </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cook delicious South-Indian food and experience the journey of an immigrant family in Venba!">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://venbagame.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Venba | A game about cooking, family and more ">
+    <meta property="og:description" content="Cook delicious South-Indian food and experience the journey of an immigrant family in Venba!">
+    <meta property="og:image" content="https://venbagame.com/img/og.jpg">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://venbagame.com/">
+    <meta property="twitter:url" content="https://venbagame.com/">
+    <meta name="twitter:title" content="Venba | A game about cooking, family and more ">
+    <meta name="twitter:description" content="Cook delicious South-Indian food and experience the journey of an immigrant family in Venba!">
+    <meta name="twitter:image" content="https://venbagame.com/img/og.jpg">
+    <link rel="preload" href="css/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/normalize.css"></noscript>
+    <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/main.css"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <style>
+        @charset "UTF-8";html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}body{overscroll-behavior-y:none}#SA_main-body *,#SA_main-body :after,#SA_main-body :before{-webkit-box-sizing:border-box;box-sizing:border-box}#SA_main-body img{max-width:100%;width:100%;-ms-flex-negative:0;flex-shrink:0;-ms-flex-item-align:start;align-self:flex-start}#SA_main-body{letter-spacing:.01em;background:#faf9f7;margin:0}#SA_main-body,#SA_main-body p{font:19px Pangolin,cursive;line-height:1.58;color:#812713;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased}#SA_main-body p{letter-spacing:.09em;-webkit-margin-before:1em;margin-block-start:1em;-webkit-margin-after:1em;margin-block-end:1em;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;font-size:19px}.SA_h1{margin:2.75rem 0 1rem;font-weight:400;line-height:1.28;font-family:Pangolin,cursive;color:rgba(0,0,0,.92);color:#f23662;letter-spacing:.09em}#SA_main-body a{color:#f23662}.SA_image-container{margin:2rem auto}.SA_flex-grid{max-width:1490px;padding:0 25px;-ms-flex-pack:distribute;justify-content:space-around;margin:0 auto 25px}@media (min-width:701px){#SA_main-body,#SA_main-body p{font-size:23px}.SA_flex-grid{margin-bottom:25px;display:-webkit-box;display:-ms-flexbox;display:flex}.SA_text-wrap{width:calc(64.28571% - 25px);width:calc(71.42857% - 25px);margin:0 auto}}@media (min-width:1025px){.SA_flex-grid{display:-webkit-box;display:-ms-flexbox;display:flex}}.SA_text-grid{max-width:1490px;margin:0 auto;position:relative;z-index:1;padding:0 25px}.SA_text-wrap{display:block}.SA_col{height:auto;position:relative}.SA_col.SA_col--10{width:calc(71.42857% - 25px);-ms-flex-preferred-size:calc(71.42857% - 25px);flex-basis:calc(71.42857% - 25px)}@media (max-width:700px){:not(.SA_flex-grid--no-stack)>.SA_col{width:100%!important;margin-bottom:25px}}:root{--swiper-theme-color:#007aff}:root{--swiper-navigation-size:44px}#visai-logo{position:absolute;left:5px;top:4px;width:60px!important;z-index:2}#fade{position:absolute;left:-4px;top:0;width:65px!important;z-index:1;background:#fef1d1;width:71px!important;height:78px!important;-webkit-filter:blur(3px);filter:blur(3px);border-radius:0 0 50%}#venba-logo{position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);top:10px;width:31%!important;min-width:260px;z-index:2}body{background:#fff2d5;background:url('img/bg.png') #FFF2D5;background-size:36%}#SA_main-body{overflow:hidden;background:0 0}#header-art-image{width:162%!important;max-width:none!important;margin-left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);position:relative}@media (min-width:701px){#visai-logo{left:20px;top:10px;width:130px!important}#venba-logo{top:35px}body{background-size:23%}#SA_main-body{background-size:23%}#header-art-image{-webkit-transform:none;-ms-transform:none;transform:none;margin-left:0!important;width:100%!important;max-height:110vh;-o-object-fit:cover;object-fit:cover;-o-object-position:top;object-position:top}}#SA_main-body .banner{background:#ea2949;background:url('img/banner-bg-540w.png') #ea2949;width:120%;margin:-5.2% -10% 0;padding:40px 10%;-webkit-transform:rotate(-2.86deg);-ms-transform:rotate(-2.86deg);transform:rotate(-2.86deg);z-index:2;position:relative;background-size:500px;text-shadow:0 3px #cf2142}@media (min-width:1025px){.SA_text-wrap{width:calc(42.85714% - 25px);width:calc(57.14286% - 25px);max-width:675px;margin:0 auto;display:block}#SA_main-body .banner{margin:-5% -10% 0}}#SA_main-body .banner p{padding:0 20px;text-align:center;line-height:1.2;max-width:600px;margin:0 auto;font-size:2rem;color:#fff}.banner .icon-grid img{-webkit-filter:drop-shadow(0 2px 0 #cf2142);filter:drop-shadow(0 2px 0 #cf2142)}.banner .icon-grid p{padding:0!important}#section-1{margin-top:50px;margin-bottom:50px}.SA_text-wrap p{text-shadow:-3px -2px 0 #fff2d5,-3px -1px 0 #fff2d5,-3px 0 0 #fff2d5,-3px 1px 0 #fff2d5,-3px 2px 0 #fff2d5,-2px -3px 0 #fff2d5,-2px -2px 0 #fff2d5,-2px -1px 0 #fff2d5,-2px 0 0 #fff2d5,-2px 1px 0 #fff2d5,-2px 2px 0 #fff2d5,-2px 3px 0 #fff2d5,-1px -3px 0 #fff2d5,-1px -2px 0 #fff2d5,-1px -1px 0 #fff2d5,-1px 0 0 #fff2d5,-1px 1px 0 #fff2d5,-1px 2px 0 #fff2d5,-1px 3px 0 #fff2d5,0 -3px 0 #fff2d5,0 -2px 0 #fff2d5,0 -1px 0 #fff2d5,0 0 0 #fff2d5,0 1px 0 #fff2d5,0 2px 0 #fff2d5,0 3px 0 #fff2d5,1px -3px 0 #fff2d5,1px -2px 0 #fff2d5,1px -1px 0 #fff2d5,1px 0 0 #fff2d5,1px 1px 0 #fff2d5,1px 2px 0 #fff2d5,1px 3px 0 #fff2d5,2px -3px 0 #fff2d5,2px -2px 0 #fff2d5,2px -1px 0 #fff2d5,2px 0 0 #fff2d5,2px 1px 0 #fff2d5,2px 2px 0 #fff2d5,2px 3px 0 #fff2d5,3px -2px 0 #fff2d5,3px -1px 0 #fff2d5,3px 0 0 #fff2d5,3px 1px 0 #fff2d5,3px 2px 0 #fff2d5}.icon-grid{display:-webkit-box;display:-ms-flexbox;display:flex;padding:0 25px;-webkit-column-gap:28px;-moz-column-gap:28px;column-gap:28px;row-gap:25px;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:35px auto 0;max-width:1200px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.icon-grid-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-decoration:none}.icon-grid-item p{margin:0!important;font-size:1.2rem!important;position:relative;line-height:1.2!important}.icon-grid-item img{-webkit-box-flex:1;-ms-flex:1;flex:1;height:40px;margin-right:10px;display:inline}.image-text-layout{-webkit-box-align:center;-ms-flex-align:center;align-items:center}:root{--swiper-theme-color:#fff}.video-container{position:relative;padding-bottom:56.25%;border-radius:4px;overflow:hidden}.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}.SA_h1{font-size:2.488rem;text-shadow:-3px -2px 0 #fff2d5,-3px -1px 0 #fff2d5,-3px 0 0 #fff2d5,-3px 1px 0 #fff2d5,-3px 2px 0 #fff2d5,-2px -3px 0 #fff2d5,-2px -2px 0 #fff2d5,-2px -1px 0 #fff2d5,-2px 0 0 #fff2d5,-2px 1px 0 #fff2d5,-2px 2px 0 #fff2d5,-2px 3px 0 #fff2d5,-1px -3px 0 #fff2d5,-1px -2px 0 #fff2d5,-1px -1px 0 #fff2d5,-1px 0 0 #fff2d5,-1px 1px 0 #fff2d5,-1px 2px 0 #fff2d5,-1px 3px 0 #fff2d5,0 -3px 0 #fff2d5,0 -2px 0 #fff2d5,0 -1px 0 #fff2d5,0 0 0 #fff2d5,0 1px 0 #fff2d5,0 2px 0 #fff2d5,0 3px 0 #fff2d5,1px -3px 0 #fff2d5,1px -2px 0 #fff2d5,1px -1px 0 #fff2d5,1px 0 0 #fff2d5,1px 1px 0 #fff2d5,1px 2px 0 #fff2d5,1px 3px 0 #fff2d5,2px -3px 0 #fff2d5,2px -2px 0 #fff2d5,2px -1px 0 #fff2d5,2px 0 0 #fff2d5,2px 1px 0 #fff2d5,2px 2px 0 #fff2d5,2px 3px 0 #fff2d5,3px -2px 0 #fff2d5,3px -1px 0 #fff2d5,3px 0 0 #fff2d5,3px 1px 0 #fff2d5,3px 2px 0 #fff2d5}@media (min-width:701px){#section-1{margin-top:100px;margin-bottom:100px}.icon-grid{-webkit-column-gap:35px;-moz-column-gap:35px;column-gap:35px}.icon-grid-item p{font-size:1.4rem!important}.SA_h1{font-size:3.488rem}}
+
+    </style>
+</head>
+
+<body>
+    <main id="SA_main-body">
+        <article>
+            <header>
+                <div id="fade"></div>
+                <picture>
+                    <!--[if IE 9]><video style="display: none;><![endif]-->
+                    <source src="img/visai-logo.webp" data-sizes="auto" type="image/webp" srcset="img/visai-logo-2480w.webp 2480w, img/visai-logo-1920w.webp 1920w, img/visai-logo-1280w.webp 1280w, img/visai-logo-1024w.webp 1024w, img/visai-logo-860w.webp 860w, img/visai-logo-540w.webp 540w, img/visai-logo-320w.webp 320w">
+                    <source src="img/visai-logo.jpg" data-sizes="auto" type="image/jpeg" srcset="img/visai-logo-2480w.jpg 2480w, img/visai-logo-1920w.jpg 1920w, img/visai-logo-1280w.jpg 1280w, img/visai-logo-1024w.jpg 1024w, img/visai-logo-860w.jpg 860w, img/visai-logo-540w.jpg 540w, img/visai-logo-320w.jpg 320w">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img class="SA_lazyload" id="visai-logo" src="img/visai-logo.jpg" data-sizes="auto" alt="Visai Games Logo" srcset="img/visai-logo-2480w.jpg 2480w, img/visai-logo-1920w.jpg 1920w, img/visai-logo-1280w.jpg 1280w, img/visai-logo-1024w.jpg 1024w, img/visai-logo-860w.jpg 860w, img/visai-logo-540w.jpg 540w, img/visai-logo-320w.jpg 320w">
+                </picture>
+                <h1 style="margin: 0; padding:0;">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                        <source src="img/venba-logo.webp" data-sizes="auto" type="image/webp" srcset="img/venba-logo-2480w.webp 2480w, img/venba-logo-1920w.webp 1920w, img/venba-logo-1280w.webp 1280w, img/venba-logo-1024w.webp 1024w, img/venba-logo-860w.webp 860w, img/venba-logo-540w.webp 540w, img/venba-logo-320w.webp 320w">
+                        <source src="img/venba-logo.png" data-sizes="auto" type="image/jpeg" srcset="img/venba-logo-2480w.png 2480w, img/venba-logo-1920w.png 1920w, img/venba-logo-1280w.png 1280w, img/venba-logo-1024w.png 1024w, img/venba-logo-860w.png 860w, img/venba-logo-540w.png 540w, img/venba-logo-320w.png 320w">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img class="SA_lazyload" id="venba-logo" src="img/venba-logo.png" data-sizes="auto" alt="Venba Game" srcset="img/venba-logo-2480w.png 2480w, img/venba-logo-1920w.png 1920w, img/venba-logo-1280w.png 1280w, img/venba-logo-1024w.png 1024w, img/venba-logo-860w.png 860w, img/venba-logo-540w.png 540w, img/venba-logo-320w.png 320w">
+                    </picture>
+                </h1>
+                <picture>
+                    <!--[if IE 9]><video style="display: none;><![endif]-->
+                    <source src="img/header-art.webp" data-sizes="auto" type="image/webp" srcset="img/header-art-2480w.webp 2480w, img/header-art-1920w.webp 1920w, img/header-art-1280w.webp 1280w, img/header-art-1024w.webp 1024w, img/header-art-860w.webp 860w, img/header-art-540w.webp 540w, img/header-art-320w.webp 320w">
+                    <source src="img/header-art.jpg" data-sizes="auto" type="image/jpeg" srcset="img/header-art-2480w.jpg 2480w, img/header-art-1920w.jpg 1920w, img/header-art-1280w.jpg 1280w, img/header-art-1024w.jpg 1024w, img/header-art-860w.jpg 860w, img/header-art-540w.jpg 540w, img/header-art-320w.jpg 320w">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img style="aspect-ratio: 1280/720;" class="SA_lazyload" id="header-art-image" src="img/header-art.jpg" data-sizes="auto" alt="An image from Venba game. The main characters are in the middle as food elements explode around them." srcset="img/header-art-2480w.jpg 2480w, img/header-art-1920w.jpg 1920w, img/header-art-1280w.jpg 1280w, img/header-art-1024w.jpg 1024w, img/header-art-860w.jpg 860w, img/header-art-540w.jpg 540w, img/header-art-320w.jpg 320w">
+                </picture>
+            </header>
+            <section id="SA_main-section" style="z-index: 12;position: relative;">
+                <div class="banner">
+                    <p>Coming Soon!</p>
+                    <div class="icon-grid">
+                        <a href="https://store.steampowered.com/app/1491670/Venba/" class="icon-grid-item"><img src="img/steam.svg">
+                            <p>Steam</p>
+                        </a>
+                        <a href="https://www.nintendo.com/en-ca/store/products/venba-switch/" class="icon-grid-item"><img src="img/switch.svg">
+                            <p>Nintendo Switch</p>
+                        </a>
+                        <a href="https://store.playstation.com/en-us/concept/10004312" class="icon-grid-item"><img src="img/playstation.svg">
+                            <p>PlayStation</p>
+                        </a>
+                        <div class="icon-grid-item"><img src="img/xbox.svg">
+                            <p>Xbox Series & One</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="section-1" class="SA_text-grid">
+                    <h2 class="SA_h1" style="text-align:center;">Idlis, Dosas, and Biriyanis!!</h2>
+                    <div class="SA_text-wrap">
+                        <p style="text-align:center;">
+                            Venba is a narrative cooking game where you play as an Indian mom who immigrates to Canada with her family in the 1980s. Players will cook various dishes and restore lost recipes, hold branching conversations and explore in this story about family, love, loss and more.
+                        </p>
+                        <div class="icon-grid" style="margin-top: 45px">
+                            <a href="https://venbagame.com/press/" class="icon-grid-item"><img style="height: 33px;" src="img/presskit.svg">
+                                <p>Presskit</p>
+                            </a>
+                            <a href="https://twitter.com/venbaGame" class="icon-grid-item"><img style="height: 33px;" src="img/twitter.svg">
+                                <p>Twitter</p>
+                            </a>
+                            <a href="https://www.tiktok.com/@venbagame" class="icon-grid-item"><img style="height: 33px;" src="img/tiktok.svg">
+                                <p>TikTok</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="SA_flex-grid SA_image-container image-text-layout">
+                    <div class="SA_col SA_col--2"></div>
+                    <div class="SA_col SA_col--10">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/fM6qjSc-G2w?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="SA_col SA_col--2"></div>
+                </div>
+                <div id="banner-2" class="banner">
+                    <p>Discover a heartfelt story of family, love, loss, and more.</p>
+                </div>
+                <div class="SA_flex-grid SA_image-container image-text-layout image-text-layout-1">
+                    <div class="SA_col SA_col--7">
+                        <video poster="img/video/Venba_Penne_Trailer_2-poster.jpg" style="border-radius: 4px;" muted loop autoplay playsinline disablepictureinpicture controlslist="nodownload noremoteplayback">
+                            <source src="img/video/Venba_Penne_Trailer_2.webm" type="video/webm">
+                            <source src="img/video/Venba_Penne_Trailer_2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="SA_col SA_col--7">
+                        <h2 class="SA_h2">Explore, Converse, Experience</h2>
+                        <p>
+                            Get to know the family well, hold branching conversations, and explore as you face the challenges that arise from day to day life.
+                        </p>
+                    </div>
+                </div>
+                <div class="banner" style="margin: 5% -10% 5% -10%;">
+                    <p>Cook and learn authentic food from regional South Indian cuisine.</p>
+                </div>
+                <div class="SA_flex-grid SA_image-container image-text-layout">
+                    <div class="SA_col SA_col--7">
+                        <h2 class="SA_h2">Cook Mouth Watering Dishes</h2>
+                        <p>
+                            Venba's recipe book gets damaged when she moves to Canada. Restore the lost recipes to cook delicious, mouth-watering dishes that serve as a connection to the home left behind.
+                        </p>
+                    </div>
+                    <div class="SA_col SA_col--7">
+                        <video poster="img/video/Venba_Penne_Trailer_1-poster.jpg" style="border-radius: 4px;" muted loop autoplay=playsinline disablepictureinpicture controlslist="nodownload noremoteplayback">
+                            <source src="img/video/Venba_Penne_Trailer_1.webm" type="video/webm">
+                            <source src="img/video/Venba_Penne_Trailer_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div id="swiper-wrapper" class="SA_flex-grid SA_image-container image-text-layout">
+                    <div class="SA_col SA_col--14">
+                        <!-- Slider main container -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/1.webp" data-sizes="auto" type="image/webp" data-srcset="img/1-2480w.webp 2480w, img/1-1920w.webp 1920w, img/1-1280w.webp 1280w, img/1-1024w.webp 1024w, img/1-860w.webp 860w, img/1-540w.webp 540w, img/1-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/1.png" data-sizes="auto" type="image/jpeg" data-srcset="img/1-2480w.png 2480w, img/1-1920w.png 1920w, img/1-1280w.png 1280w, img/1-1024w.png 1024w, img/1-860w.png 860w, img/1-540w.png 540w, img/1-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/1.png" data-sizes="auto" alt="A screenshot from Venba. The three main characters are standing in the kitchen." data-srcset="img/1-2480w.png 2480w, img/1-1920w.png 1920w, img/1-1280w.png 1280w, img/1-1024w.png 1024w, img/1-860w.png 860w, img/1-540w.png 540w, img/1-320w.png 320w">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/2.webp" data-sizes="auto" type="image/webp" data-srcset="img/2-2480w.webp 2480w, img/2-1920w.webp 1920w, img/2-1280w.webp 1280w, img/2-1024w.webp 1024w, img/2-860w.webp 860w, img/2-540w.webp 540w, img/2-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/2.png" data-sizes="auto" type="image/jpeg" data-srcset="img/2-2480w.png 2480w, img/2-1920w.png 1920w, img/2-1280w.png 1280w, img/2-1024w.png 1024w, img/2-860w.png 860w, img/2-540w.png 540w, img/2-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/2.png" data-sizes="auto" alt="A screenshot from Venba. A fish sits on a cutting board with three slices in it." data-srcset="img/2-2480w.png 2480w, img/2-1920w.png 1920w, img/2-1280w.png 1280w, img/2-1024w.png 1024w, img/2-860w.png 860w, img/2-540w.png 540w, img/2-320w.png 320w">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/3.webp" data-sizes="auto" type="image/webp" data-srcset="img/3-2480w.webp 2480w, img/3-1920w.webp 1920w, img/3-1280w.webp 1280w, img/3-1024w.webp 1024w, img/3-860w.webp 860w, img/3-540w.webp 540w, img/3-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/3.png" data-sizes="auto" type="image/jpeg" data-srcset="img/3-2480w.png 2480w, img/3-1920w.png 1920w, img/3-1280w.png 1280w, img/3-1024w.png 1024w, img/3-860w.png 860w, img/3-540w.png 540w, img/3-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/3.png" data-sizes="auto" alt="A screenshot from Venba. The main character Venba is brushing her hair." data-srcset="img/3-2480w.png 2480w, img/3-1920w.png 1920w, img/3-1280w.png 1280w, img/3-1024w.png 1024w, img/3-860w.png 860w, img/3-540w.png 540w, img/3-320w.png 320w">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/4.webp" data-sizes="auto" type="image/webp" data-srcset="img/4-2480w.webp 2480w, img/4-1920w.webp 1920w, img/4-1280w.webp 1280w, img/4-1024w.webp 1024w, img/4-860w.webp 860w, img/4-540w.webp 540w, img/4-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/4.png" data-sizes="auto" type="image/jpeg" data-srcset="img/4-2480w.png 2480w, img/4-1920w.png 1920w, img/4-1280w.png 1280w, img/4-1024w.png 1024w, img/4-860w.png 860w, img/4-540w.png 540w, img/4-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/4.png" data-sizes="auto" alt="A screenshot from Venba. Tomatos and onions cook on the stove. Stem billows everywhere." data-srcset="img/4-2480w.png 2480w, img/4-1920w.png 1920w, img/4-1280w.png 1280w, img/4-1024w.png 1024w, img/4-860w.png 860w, img/4-540w.png 540w, img/4-320w.png 320w">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/5.webp" data-sizes="auto" type="image/webp" data-srcset="img/5-2480w.webp 2480w, img/5-1920w.webp 1920w, img/5-1280w.webp 1280w, img/5-1024w.webp 1024w, img/5-860w.webp 860w, img/5-540w.webp 540w, img/5-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/5.png" data-sizes="auto" type="image/jpeg" data-srcset="img/5-2480w.png 2480w, img/5-1920w.png 1920w, img/5-1280w.png 1280w, img/5-1024w.png 1024w, img/5-860w.png 860w, img/5-540w.png 540w, img/5-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/5.png" data-sizes="auto" alt="A screenshot from Venba. Venba and her son walk in the night." data-srcset="img/5-2480w.png 2480w, img/5-1920w.png 1920w, img/5-1280w.png 1280w, img/5-1024w.png 1024w, img/5-860w.png 860w, img/5-540w.png 540w, img/5-320w.png 320w">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/6.webp" data-sizes="auto" type="image/webp" data-srcset="img/6-2480w.webp 2480w, img/6-1920w.webp 1920w, img/6-1280w.webp 1280w, img/6-1024w.webp 1024w, img/6-860w.webp 860w, img/6-540w.webp 540w, img/6-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/6.png" data-sizes="auto" type="image/jpeg" data-srcset="img/6-2480w.png 2480w, img/6-1920w.png 1920w, img/6-1280w.png 1280w, img/6-1024w.png 1024w, img/6-860w.png 860w, img/6-540w.png 540w, img/6-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/6.png" data-sizes="auto" alt="A screenshot from Venba. A special device is being used to cook." data-srcset="img/6-2480w.png 2480w, img/6-1920w.png 1920w, img/6-1280w.png 1280w, img/6-1024w.png 1024w, img/6-860w.png 860w, img/6-540w.png 540w, img/6-320w.png 320w">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/7.webp" data-sizes="auto" type="image/webp" data-srcset="img/7-2480w.webp 2480w, img/7-1920w.webp 1920w, img/7-1280w.webp 1280w, img/7-1024w.webp 1024w, img/7-860w.webp 860w, img/7-540w.webp 540w, img/7-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/7.png" data-sizes="auto" type="image/jpeg" data-srcset="img/7-2480w.png 2480w, img/7-1920w.png 1920w, img/7-1280w.png 1280w, img/7-1024w.png 1024w, img/7-860w.png 860w, img/7-540w.png 540w, img/7-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/7.png" data-sizes="auto" alt="A screenshot from Venba. A close up of biriyani." data-srcset="img/7-2480w.png 2480w, img/7-1920w.png 1920w, img/7-1280w.png 1280w, img/7-1024w.png 1024w, img/7-860w.png 860w, img/7-540w.png 540w, img/7-320w.png 320w">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/8.webp" data-sizes="auto" type="image/webp" data-srcset="img/8-2480w.webp 2480w, img/8-1920w.webp 1920w, img/8-1280w.webp 1280w, img/8-1024w.webp 1024w, img/8-860w.webp 860w, img/8-540w.webp 540w, img/8-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/8.png" data-sizes="auto" type="image/jpeg" data-srcset="img/8-2480w.png 2480w, img/8-1920w.png 1920w, img/8-1280w.png 1280w, img/8-1024w.png 1024w, img/8-860w.png 860w, img/8-540w.png 540w, img/8-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/8.png" data-sizes="auto" alt="A screenshot from Venba of a finished meal." data-srcset="img/8-2480w.png 2480w, img/8-1920w.png 1920w, img/8-1280w.png 1280w, img/8-1024w.png 1024w, img/8-860w.png 860w, img/8-540w.png 540w, img/8-320w.png 320w">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;><![endif]-->
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/9.webp" data-sizes="auto" type="image/webp" data-srcset="img/9-2480w.webp 2480w, img/9-1920w.webp 1920w, img/9-1280w.webp 1280w, img/9-1024w.webp 1024w, img/9-860w.webp 860w, img/9-540w.webp 540w, img/9-320w.webp 320w">
+                                        <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/9.png" data-sizes="auto" type="image/jpeg" data-srcset="img/9-2480w.png 2480w, img/9-1920w.png 1920w, img/9-1280w.png 1280w, img/9-1024w.png 1024w, img/9-860w.png 860w, img/9-540w.png 540w, img/9-320w.png 320w">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="SA_lazyload" data-src="img/9.png" data-sizes="auto" alt="A screenshot from Venba of the three main characters eating dinner." data-srcset="img/9-2480w.png 2480w, img/9-1920w.png 1920w, img/9-1280w.png 1280w, img/9-1024w.png 1024w, img/9-860w.png 860w, img/9-540w.png 540w, img/9-320w.png 320w">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer id="SA_footer">
+            <nav>
+                <a href="https://venbagame.com/press/">Presskit</a> |
+                <a href="https://twitter.com/venbaGame">Twitter</a> |
+                <a href="https://www.tiktok.com/@venbagame">TikTok</a> |
+                <a href="https://store.steampowered.com/app/1491670/Venba/">Steam</a>
+            </nav>
+            <div class="copyright">
+                &copy;
+                <span id="copyright">
+                    <script>
+                    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+                    </script>
+                </span>
+                Visai Games
+            </div>
+        </footer>
+    </main>
+    <script type="text/javascript">
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    // add prefix to all styles
+    window.lazySizesConfig.lazyClass = 'SA_lazyload';
+    window.lazySizesConfig.preloadClass = "SA_lazypreload";
+    window.lazySizesConfig.loadingClass = "SA_lazyloading";
+    window.lazySizesConfig.loadedClass = "SA_lazyloaded";
+    window.lazySizesConfig.loadMode = 3;
+    window.lazySizesConfig.preloadAfterLoad = true;
+    </script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
